@@ -4,15 +4,22 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Counter from "./components/counter";
 import Header from './components/header';
-import FloatingHeader from "./components/FloatingHeader";
+import Navigation from "./components/Navigation";
 
 const root = document.querySelector('#root');
 
+let styles = {
+    header: {
+        position: 'fixed'
+    },
+}
+
 ReactDOM.render(
 <div>
-<Header />
-<Counter />
-<FloatingHeader />
+    <Navigation />
+    <Header style={styles.header} />
+    <Counter />
+
 </div>, 
 root
 )

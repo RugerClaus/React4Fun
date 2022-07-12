@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-const body = document.body;
-body.style.backgroundColor = 'white';
-
 class Counter extends Component {
     constructor(props){
         super(props);
